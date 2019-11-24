@@ -17,7 +17,7 @@ from django.urls import include, path
 from rest_framework import routers
 from linkkit.links import views
 
-router = routers.DefaultRouter()
+router = routers.SimpleRouter()
 router.register(r'links', views.LinkViewSet)
 
 # Wire up our API using automatic URL routing.

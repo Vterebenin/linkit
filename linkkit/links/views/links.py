@@ -1,6 +1,10 @@
+from rest_framework.response import Response
+
 from linkkit.links.models import Link
 from rest_framework import viewsets
 from linkkit.links.serializers import LinkSerializer
+from django.http import JsonResponse
+from rest_framework.decorators import action
 
 
 class LinkViewSet(viewsets.ModelViewSet):
@@ -9,3 +13,8 @@ class LinkViewSet(viewsets.ModelViewSet):
     """
     queryset = Link.objects.all()
     serializer_class = LinkSerializer
+
+    @action(method=["post"], detail=True)
+    def list(self, request, *args, **kwargs):
+        print(request)
+        return Response(LinkSerializer().data)
