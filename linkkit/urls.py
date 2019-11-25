@@ -18,7 +18,7 @@ from rest_framework import routers
 from linkkit.links import views
 
 router = routers.SimpleRouter()
-router.register(r'links', views.LinkViewSet)
+router.register(r'links', views.LinkViewSet, base_name='links')
 
 # Wire up our API using automatic URL routing.
 # Additionally, we include login URLs for the browsable API.

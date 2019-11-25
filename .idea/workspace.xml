@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="43796990-6a16-4395-999c-e101659f9cfd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linkkit/links/views/links.py" beforeDir="false" afterPath="$PROJECT_DIR$/linkkit/links/views/links.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linkkit/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/linkkit/urls.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -122,7 +120,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="npm.start">
+  <component name="RunManager" selected="Django server.linkkit">
     <configuration name="linkkit" type="Python.DjangoServer" factoryName="Django server">
       <module name="linkkit" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -194,6 +192,7 @@
       <workItem from="1574594640266" duration="2864000" />
       <workItem from="1574597520447" duration="5025000" />
       <workItem from="1574631401215" duration="1861000" />
+      <workItem from="1574694035502" duration="2173000" />
     </task>
     <servers />
   </component>

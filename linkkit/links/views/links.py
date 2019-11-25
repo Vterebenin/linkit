@@ -11,10 +11,8 @@ class LinkViewSet(viewsets.ModelViewSet):
     """
     API endpoint that allows links to be viewed or edited.
     """
-    queryset = Link.objects.all()
-    serializer_class = LinkSerializer
 
-    @action(method=["post"], detail=True)
     def list(self, request, *args, **kwargs):
-        print(request)
+        queryset = Link.objects.all()
+        serializer_class = LinkSerializer
         return Response(LinkSerializer().data)
