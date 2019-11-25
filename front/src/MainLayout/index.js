@@ -13,6 +13,7 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Link from '@material-ui/core/Link';
+import { Link as RouterLink } from 'react-router-dom';
 
 function Copyright() {
   return (
@@ -69,10 +70,23 @@ export default function Album(props) {
       <CssBaseline />
       <AppBar position="relative">
         <Toolbar>
-          <CameraIcon className={classes.icon} />
-          <Typography variant="h6" color="inherit" noWrap>
-            Link-kit
-          </Typography>
+          <Grid md={2}>
+            <CameraIcon className={classes.icon} />
+          </Grid>
+          <Grid md={6}>
+          </Grid>
+          <Grid md={2}>
+            <Typography variant="h6" color="inherit" noWrap>
+              <RouterLink to="/links">links</RouterLink>
+            </Typography>
+          </Grid>
+          <Grid md={2}>
+            <Typography variant="h6" color="inherit" noWrap>
+              <RouterLink to="/">link-kit_</RouterLink>
+            </Typography>
+          </Grid>
+
+
         </Toolbar>
       </AppBar>
       <main>
